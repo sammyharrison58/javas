@@ -1,4 +1,4 @@
-public class galtolits
+public class galtolit
 {
     public static void main(String[] args)
     {
