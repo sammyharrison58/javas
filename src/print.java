@@ -8,10 +8,10 @@ public class print {
         char here=input.next().charAt(0);
         switch (here){
             case 'Y':
-                System.out.println("Yes");
+                System.out.println("Yes you are in");
                 break;
             case 'N':
-                System.out.println("No");
+                System.out.println("No you are out");
                 break;
             default:
                 System.out.println("invalid");
