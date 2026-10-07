@@ -10,7 +10,13 @@ public class print {
             case 'Y':
                 System.out.println("Yes you are in");
                 break;
+            case 'y':
+                System.out.println("Yes you are in");
+                break;
             case 'N':
+                System.out.println("No you are out");
+                break;
+            case 'n':
                 System.out.println("No you are out");
                 break;
             default:
