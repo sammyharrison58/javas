@@ -14,7 +14,7 @@ public class print {
                 System.out.println("Yes you are in");
                 break;
             case 'N':
-                System.out.println("No you are out");
+                System.out.println("No you are out,bye");
                 break;
             case 'n':
                 System.out.println("No you are out");
