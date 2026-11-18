@@ -5,20 +5,20 @@ public class TowerOfHanoiIterative {
     public static void towerOfHanoiIterative(int n, String source, String destination, String auxiliary) {
         int totalMoves = (1 << n) - 1; // 2^n - 1
 
-        // If n is even, swap destination and auxiliary
+
         if (n % 2 == 0) {
             String temp = destination;
             destination = auxiliary;
             auxiliary = temp;
         }
 
-        // Represent pegs as stacks
+
         Map<String, Deque<Integer>> pegs = new HashMap<>();
         pegs.put(source, new ArrayDeque<>());
         pegs.put(auxiliary, new ArrayDeque<>());
         pegs.put(destination, new ArrayDeque<>());
 
-        // Put all disks on the source peg (largest at the bottom)
+
         for (int i = n; i >= 1; i--) {
             pegs.get(source).push(i);
         }
@@ -60,7 +60,7 @@ public class TowerOfHanoiIterative {
     }
 
     public static void main(String[] args) {
-        // Example with 3 disks
+
         towerOfHanoiIterative(3, "A", "C", "B");
     }
 }
